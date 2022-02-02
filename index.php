@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SILAPOR - Login</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 </head>
 <body>
   <!-- <div style="display: block; position:absolute; z-index:9999; top:0;bottom:0;left:0;right:0;background-color:black;"></div> -->
@@ -30,7 +30,7 @@
             </tr>
             <tr>
               <td >
-                <button type="submit" name="login">Login</button>
+                <button class="btn btn-primary btn-sm" type="submit" name="login">Login</button>
               </td>
             </tr>
           </table>
@@ -40,5 +40,7 @@
       </div>
     </center>
   </div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
