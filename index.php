@@ -9,12 +9,11 @@
 </head>
 <body>
   <!-- <div style="display: block; position:absolute; z-index:9999; top:0;bottom:0;left:0;right:0;background-color:black;"></div> -->
-  <div class="content">
+  <div class="container">
     <header>
       <h1 class="judul">SILAPOR</h1>
       <h3 class="deskripsi">(SISTEM INFORMASI LAPORAN PENGADUAN MASYARAKAT)</h3>
     </header>
-    <center>
       <div class="badan">
         <form action="masy_proses_login.php" method="post">
           <table>
@@ -38,7 +37,6 @@
           Belum punya akun? <a href="masy_registrasi.php">Daftar disini</a>
         </form>
       </div>
-    </center>
   </div>
 
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
