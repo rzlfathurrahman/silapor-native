@@ -13,29 +13,35 @@
   <link rel="stylesheet" href="./assets/css/login.css">
 
 </head>
-<body class="text-center">
+<body>
   <main class="form-signin">
-    <form>
-      <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="Website Logo" width="72" height="57">
-      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <form action="masy_proses_login.php" method="post">
+      <!-- <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="Website Logo" width="72" height="57"> -->
+      <h1 class="h2 mb-4 fw-normal text-center">SILAPOR - Login</h1>
 
-      <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Email address</label>
+      <div class="form-group mb-2">
+        <!-- <label for="floatingInput">Email address</label> -->
+        <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username">
       </div>
       
-      <div class="form-floating mb-3">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-        <label for="floatingPassword">Password</label>
+      <div class="form-group mb-2">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+        <!-- <label for="floatingPassword">Password</label> -->
       </div>
 
-      <div class="checkbox mb-3">
+      
+      <!-- <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me"> Remember me
         </label>
-      </div>
-      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+      </div> -->
+      <button class="w-100 btn btn-primary" type="submit">Sign in</button>
+
+      <hr style="width: 50%;" class="mx-auto">
+      
+      <p class="text-center">Belum punya akun? <a href="masy_registrasi.php">Daftar disini</a> </p>
+
+      <p class="mt-5 mb-3 text-center text-muted">&copy; <?= date('Y') ?></p>
     </form>
   </main>
 
