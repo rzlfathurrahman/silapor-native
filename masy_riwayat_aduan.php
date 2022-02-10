@@ -35,7 +35,7 @@
 <body>
   <div class="content">
     <p>Selamat Datang, <strong><?= $nama ?></strong>
-      <a href="masy_logout.php" style="float:right;">Logout</a>
+      <a href="masy_proses_logout.php" style="float:right;">Logout</a>
     </p>
 
     <?php require_once 'menu_masyarakat.php' ?>
