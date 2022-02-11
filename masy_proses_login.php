@@ -14,16 +14,16 @@
       window.location='index.php';
     </script>";
   }else{
-    if($pass <> $hasil['password']){
-      echo "
-        <script>
-          alert('Password Salah');
-          window.location='index.php';
-        </script>
-      ";
-    }else{
+    if(password_verify($pass ,$hasil['password'])){
       $_SESSION['username'] = $hasil['username'];
       header('location:masy_home.php');
+    }else{
+      echo "
+        <script>
+          alert('Password Salah!');
+          window.location='login';
+        </script>
+      ";
     }
   }
 ?>

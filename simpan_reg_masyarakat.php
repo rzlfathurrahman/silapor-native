@@ -4,7 +4,7 @@
   $nik = htmlspecialchars($_POST['nik']);
   $nama = htmlspecialchars($_POST['nama']);
   $username = htmlspecialchars($_POST['username']);
-  $password = htmlspecialchars($_POST['password']);
+  $password = password_hash(htmlspecialchars($_POST['password']),PASSWORD_DEFAULT);
   $telp = htmlspecialchars($_POST['telp']);
 
   if(
