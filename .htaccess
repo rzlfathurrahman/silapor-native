@@ -1,3 +1,4 @@
-RewriteEngine On
-RewriteRule ^login index.php
-RewriteRule ^daftar masy_registrasi.php
+# RewriteEngine On
+
+ ErrorDocument 500 serverissue.html
+ ErrorDocument 404 notfound.html
