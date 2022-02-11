@@ -23,7 +23,7 @@
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div> -->
-      <button class="w-100 btn btn-primary" type="submit">Sign in</button>
+      <button class="w-100 btn btn-primary" type="submit">masuk</button>
 
       <hr style="width: 50%;" class="mx-auto">
       
