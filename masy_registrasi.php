@@ -1,60 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SILAPOR - Registrasi</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="content">
-    <header>
-      <h1 class="judul">SILAPOR</h1>
-      <h3 class="deskripsi">(SISTEM INFORMASI LAPORAN PENGADUAN MASYARAKAT)</h3>
-    </header>
-    <center>
-      <div class="badan">
-        <form action="simpan_reg_masyarakat.php" method="post">
-          <table>
-            <tr>
-              <td>NIK</td>
-              <td>:</td>
-              <td><input type="text" name="nik"></td>
-            </tr>
-            <tr>
-              <td>Nama</td>
-              <td>:</td>
-              <td><input type="text" name="nama"></td>
-            </tr>
-            <tr>
-              <td>Username</td>
-              <td>:</td>
-              <td><input type="text" name="username"></td>
-            </tr>
-            <tr>
-              <td>Password</td>
-              <td>:</td>
-              <td><input type="password" name="password"></td>
-            </tr>
-            <tr>
-              <td>No Telepon</td>
-              <td>:</td>
-              <td><input type="text" name="telp"></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>
-                <button type="submit" name="daftar">Daftar</button>
-              </td>
-            </tr>
-          </table>
-          <br>
-          <a href="index.php">Login disini</a>
-        </form>
-      </div>
-    </center>
-  </div>
+<?php 
+
+  require_once 'layouts/header.php';
+
+?>
+<main class="form-signin">
+
+  <form action="simpan_reg_masyarakat.php" method="post">
+    <h1 class="h2 mb-4 fw-normal text-center">SILAPOR - Registrasi</h1>
+
+    <div class="form-group mb-2">
+      <label for="nik">NIK</label>
+      <input id="nik" type="text" class="form-control form-control-sm" name="nik" placeholder="Masukan NIK (16 Digit)" >
+    </div>
+
+    <div class="form-group mb-2">
+      <label for="nama">Nama</label>
+      <input id="nama" type="text" class="form-control form-control-sm" name="nama" placeholder="Masukan nama lengkap" >
+    </div>
+    
+    <div class="form-group mb-2">
+      <label for="username">Username</label>
+      <input id="username" type="text" class="form-control form-control-sm" name="username" placeholder="Masukan username (untuk login)" >
+    </div>
+
+    <div class="form-group mb-2">
+      <label for="password">Password</label>
+      <input id="password" type="password" class="form-control form-control-sm" name="password" placeholder="Masukan password (untuk login)" >
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="telp">No Telepon</label>
+      <input id="telp" type="text" class="form-control form-control-sm" name="telp" placeholder="Masukan nomor telepon (08xxx)" >
+    </div>
+
+    <button type="submit" class="btn btn-sm w-100 btn-primary">Daftar</button>
+
+    <hr style="width: 50%;" class="mx-auto">
+
+    Atau sudah memiliki akun? <a href="login">Login disini</a>  
+
+    <p class="mt-5 mb-3 text-center text-muted">&copy; <?= date('Y') ?></p>
+  </form>
+</main>
+
 </body>
 </html>
