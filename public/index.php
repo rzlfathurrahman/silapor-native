@@ -1,13 +1,4 @@
 <?php 
-
-  require_once '../app/init.php';
-  $new = new App();
-
-  exit;
-
-?>
-
-<?php 
   require_once 'layouts/header.php';
 ?>
 
