@@ -1,4 +1,20 @@
 <?php 
+
+require_once '../app/init.php';
+exit;
+
+?>
+
+
+
+
+
+
+
+
+
+
+<?php 
   require_once 'layouts/header.php';
 ?>
 
