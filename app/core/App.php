@@ -9,9 +9,18 @@ class App
 
   public function __construct()
   {
-    // Logic
+    // Get parsed url from method parseURL()
     $url = $this->parseURL();
-    var_dump($url);
+
+    // Setup Controller
+    if(file_exists('../app/controllers/'.$url[0].'.php')){
+      $this->controller = $url[0];
+      unset($url[0]);
+    }
+
+    require_once '../app/controllers/'.$this->controller.'.php';
+    $this->controller = new $this->controller;
+    
   }
 
   public function parseURL(){
