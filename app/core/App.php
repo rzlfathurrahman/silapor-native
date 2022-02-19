@@ -3,6 +3,10 @@
 class App  
 { 
 
+  protected $controller = 'Home',
+            $method = 'Index',
+            $params = [];
+
   public function __construct()
   {
     // Logic
