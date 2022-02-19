@@ -28,6 +28,11 @@ class App
         unset($url[1]);
       }
     }
+
+    // Setup Params/Data
+    if(!empty($url)){
+      $this->params = array_values($url);
+    }
     
   }
 
