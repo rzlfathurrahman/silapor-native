@@ -42,7 +42,7 @@ class App
     
   }
 
-  public function parseURL(){
+  private function parseURL(){
     if(isset($_GET['url'])){
 
       // remove '/' at the end of url string
