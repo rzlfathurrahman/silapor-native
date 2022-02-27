@@ -1,10 +1,14 @@
 <?php 
-
 class Home
 {
   public function index() {
-    echo "ini adalah controller home";
+    loadView('layouts/header',[
+      'title' => 'Dashboard'
+    ]);
+    loadView('index');
+    loadView('layouts/footer');
   }
 }
+
 
 ?>
